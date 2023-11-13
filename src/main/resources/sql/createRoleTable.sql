@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS Role (
+    roleID VARCHAR(255) NOT NULL,
+    roleMethod VARCHAR(255) NOT NULL,
+    roleDescription VARCHAR(255) NOT NULL,
+    PRIMARY KEY (roleID)
+);

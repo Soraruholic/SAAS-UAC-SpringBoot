@@ -8,20 +8,19 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.util.List;
-
 @Getter
 @Setter
 @ToString
-@TableName("User")
-public class User {
+@TableName("Role")
+public class Role {
     @TableId
-    private String userID;
-    private String userName;
-    private String userPassword;
-    private String userEmail;
-    private String userPhone;
-    private String lastPasswordResetDate;
+    private String roleID;
+    private String roleMethod;
+    private String roleDescription;
 
     @TableField(exist = false)
     private List<Role> roleList;
+
+    @TableField(exist = false)
+    private List<User> userList;
 }
